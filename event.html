@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details | Campus Event Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Blue Bar with Event Details + Profile -->
+    <div class="event-top-bar">
+        <button class="back-arrow-btn" onclick="history.back()">←</button>
+        <h2 class="event-details-title">event details</h2>
+        <div class="profile-icon" onclick="location.href='profile.html'">👤</div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="event-main-content">
+        <div class="event-two-columns">
+            
+            <!-- LEFT COLUMN: Image + Event Info -->
+            <div class="event-left-col">
+                <!-- Event Image -->
+                <div class="event-detail-image">
+                    <img src="https://images.pexels.com/photos/952422/pexels-photo-952422.jpeg" alt="Open Mic Night" id=" eventDetailImg" class="event-img">
+                </div>
+                
+                <!-- Red Box with Event Info -->
+                <div class="event-info-red-box">
+                    <div class="event-info-header">
+                        <h1 class="event-detail-name" id="eventDetailName">Open Mic Night</h1>
+                        <div class="event-host-info">
+                            <span class="host-name">Hosted by Campus Activities Council</span>
+                            <span class="host-handle">@cacYork • 12 events</span>
+                        </div>
+                    </div>
+                    <p class="event-blurb" id="eventDetailBlurb">
+                        Come showcase your talent or just enjoy the show! Open mic night welcomes 
+                        musicians, poets, comedians, and anyone who wants to share. Free coffee 
+                        and snacks provided.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- RIGHT COLUMN: Map + Time/Location + Save Button -->
+            <div class="event-right-col">
+                <!-- Map Card -->
+                <div class="map-card">
+                    <!-- Map Card -->
+                    <div class="map-card">
+                        <img src="./images:/map.png" alt="York University Map" class="map-image">
+                        <div class="map-location-name">📍 Vari Hall • York University</div>
+                    </div>
+                
+                <!-- Time & Location Details (Red Strech) -->
+                <div class="time-location-section">
+                    <div class="time-location-row">
+                        <span class="tl-icon">📅</span>
+                        <span class="tl-label">date & time:</span>
+                        <span class="tl-value" id="eventDetailDate">Tuesday, March 25 • 7:00 PM – 10:00 PM</span>
+                    </div>
+                    <div class="time-location-row">
+                        <span class="tl-icon">📍</span>
+                        <span class="tl-label">location:</span>
+                        <span class="tl-value" id="eventDetailLocation">Vari Hall, Student Centre, York University</span>
+                    </div>
+                    <div class="time-location-row">
+                        <span class="tl-icon">🏷️</span>
+                        <span class="tl-label">category:</span>
+                        <span class="tl-value" id="eventDetailCategory">Social</span>
+                    </div>
+                </div>
+                
+                <!-- Save Event Button -->
+                <div class="save-event-container">
+                    <button class="save-event-btn" id="saveEventBtn">★ save event</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="./images:/footer.png" alt="York University Footer" class="footer-img">
+            <div class="footer-info">
+                <p>York University | Keele Campus | 4700 Keele Street, Toronto, ON M3J 1P3</p>
+                <p>© 2026 Campus Event Finder | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

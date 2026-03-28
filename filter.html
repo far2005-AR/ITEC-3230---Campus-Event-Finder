@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Events | Campus Event Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <!-- Top Red Bar with Logo, Centered Title, Profile -->
+    <div class="filter-top-bar">
+        <div class="filter-left-section">
+            <button class="back-arrow-btn" onclick="history.back()">←</button>
+            <img src="./images:/logo.png" alt="Logo" class="filter-logo">
+        </div>
+        <div class="filter-center-title">
+            <span class="filter-page-title">filter by</span>
+        </div>
+        <div class="profile-icon" onclick="location.href='profile.html'">👤</div>
+    </div>
+
+    <!-- Main Filter Content -->
+    <main class="filter-main-content">
+        <!-- Three Column Layout -->
+        <div class="filter-three-columns">
+            
+            <!-- LEFT COLUMN: CATEGORY (tall rectangle) -->
+            <div class="filter-section tall">
+                <h3 class="filter-section-title">category</h3>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="academic"> academic
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="social"> social
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="sports"> sports
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="on campus"> on campus
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="off campus"> off campus
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="online"> online
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="career"> career
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="workshop"> workshop
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="food & drinks"> food & drinks
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="music"> music
+                    </label>
+                </div>
+                <button class="clear-btn" id="clearCategoryBtn">clear all</button>
+            </div>
+
+            <!-- RIGHT COLUMN: DATE + TIME (stacked) -->
+            <div class="filter-right-stack">
+                
+                <!-- DATE SECTION -->
+                <div class="filter-section">
+                    <h3 class="filter-section-title">date</h3>
+                    <div class="date-options">
+                        <button class="date-chip" data-date="today">today</button>
+                        <button class="date-chip" data-date="tomorrow">tomorrow</button>
+                        <button class="date-chip" data-date="this-week">this week</button>
+                        <button class="date-chip" data-date="this-weekend">this weekend</button>
+                        <button class="date-chip" data-date="next-week">next week</button>
+                        <button class="date-chip" data-date="pick-date">pick a date 📅</button>
+                    </div>
+                </div>
+
+                <!-- TIME SECTION -->
+                <div class="filter-section">
+                    <h3 class="filter-section-title">time</h3>
+                    <div class="time-options">
+                        <button class="time-chip active" data-time="any">any</button>
+                        <button class="time-chip" data-time="morning">morning (6am–12pm)</button>
+                        <button class="time-chip" data-time="afternoon">afternoon (12pm–5pm)</button>
+                        <button class="time-chip" data-time="evening">evening (5pm–9pm)</button>
+                        <button class="time-chip" data-time="night">night (9pm–12am)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- APPLY BUTTON -->
+        <div class="apply-container">
+            <button class="apply-btn" id="applyFiltersBtn">apply filters</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="./images:/footer.png" alt="York University Footer" class="footer-img">
+            <div class="footer-info">
+                <p>York University | Keele Campus | 4700 Keele Street, Toronto, ON M3J 1P3</p>
+                <p>© 2026 Campus Event Finder | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

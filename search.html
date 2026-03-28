@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results | Campus Event Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Red Bar with Logo + Title -->
+    <div class="top-red-bar">
+        <div class="logo-container">
+            <img src="./images:/logo.png" alt="Campus Event Finder Logo" class="logo-img">
+            <div class="title-wrapper">
+                <h1 class="campus-title">campus event finder</h1>
+                <div class="red-underline"></div>
+            </div>
+        </div>
+        
+        <!-- Search + Profile Section -->
+        <div class="search-profile-container">
+            <div class="search-wrapper">
+                <form action="search.html" method="get">
+                    <input type="text" name="query" class="search-bar" placeholder="Search events..." value="open mic">
+                </form>
+            </div>
+            <div class="profile-icon" onclick="location.href='profile.html'">👤</div>
+        </div>
+    </div>
+
+    <!-- Filter by Bar -->
+    <div class="filter-bar">
+        <span class="filter-label">filter by</span>
+        <button class="filter-chip" onclick="location.href='search.html?filter=all'">all</button>
+        <button class="filter-chip active" onclick="location.href='search.html?filter=social'">social</button>
+        <button class="filter-chip" onclick="location.href='search.html?filter=sports'">sports</button>
+        <button class="filter-chip" onclick="location.href='search.html?filter=academic'">academic</button>
+        <button class="filter-chip" onclick="location.href='search.html?filter=career'">career</button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Search Results Header -->
+        <div class="search-results-header">
+            <div class="back-button" onclick="location.href='index.html'">
+                <span class="back-arrow">←</span> back
+            </div>
+            <div class="results-count">
+                <span class="count-number">3</span> results found for "open mic"
+            </div>
+            <div class="filter-icon" onclick="location.href='filter.html'">
+                <span class="filter-icon-text">🔧 filters</span>
+            </div>
+        </div>
+
+        <!-- Events Grid -->
+        <div class="events-grid">
+            <!-- Card 1 - Open Mic -->
+            <div class="event-card">
+                <img src="https://images.pexels.com/photos/952422/pexels-photo-952422.jpeg" alt="Open Mic Night" class="event-img">
+                <div class="event-info">
+                    <h3 class="event-title">Open Mic Night</h3>
+                    <div class="event-location-row">
+                        <span class="location-icon">📍</span>
+                        <span class="location-text">Vari Hall</span>
+                    </div>
+                    <div class="event-date-star">
+                        <span class="event-date">Mar 25 • 7:00 PM</span>
+                        <button class="star-btn">☆</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 - Pick Up Basketball -->
+            <div class="event-card">
+                <img src="https://images.pexels.com/photos/21656190/pexels-photo-21656190.jpeg" alt="Pick Up Basketball" class="event-img">
+                <div class="event-info">
+                    <h3 class="event-title">Pick Up Basketball</h3>
+                    <div class="event-location-row">
+                        <span class="location-icon">📍</span>
+                        <span class="location-text">Tait McKenzie Centre</span>
+                    </div>
+                    <div class="event-date-star">
+                        <span class="event-date">Mar 28 • 1:00 PM</span>
+                        <button class="star-btn">☆</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 - Robotics Meet -->
+            <div class="event-card">
+                <img src="https://www.excal.on.ca/wp-content/uploads/2021/03/Featured-Image.jpg" alt="Robotics Meet Up" class="event-img">
+                <div class="event-info">
+                    <h3 class="event-title">Robotics Meet Up</h3>
+                    <div class="event-location-row">
+                        <span class="location-icon">📍</span>
+                        <span class="location-text">Lassonde Building</span>
+                    </div>
+                    <div class="event-date-star">
+                        <span class="event-date">Apr 05-06 • All Day</span>
+                        <button class="star-btn">☆</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="./images:/footer.png" alt="York University Footer" class="footer-img">
+            <div class="footer-info">
+                <p>York University | Keele Campus | 4700 Keele Street, Toronto, ON M3J 1P3</p>
+                <p>© 2026 Campus Event Finder | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

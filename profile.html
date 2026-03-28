@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Campus Event Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Top Red Bar with Logo + Title  -->
+    <div class="top-red-bar">
+        <div class="logo-container">
+            <img src="./images:/logo.png" alt="Campus Event Finder Logo" class="logo-img">
+            <div class="title-wrapper">
+                
+                <h1 class="campus-title">Campus Event Finder</h1>
+                <div class="red-underline"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blue Bar with Toggle Buttons -->
+    <div class="profile-toggle-bar">
+        <button class="back-btn" onclick="location.href='index.html'">←</button>
+        <button class="toggle-btn active" id="savedEventsToggle">my saved events</button>
+        <button class="toggle-btn" id="myEventsToggle">my events</button>
+        <button class="toggle-btn" id="findMoreBtn">find more events</button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="profile-main-content">
+        <div class="profile-two-columns">
+            
+            <!-- LEFT COLUMN: Event Cards -->
+            <div class="profile-events-col">
+                <!-- SAVED EVENTS VIEW (default) -->
+                <div id="savedEventsView" class="profile-view active">
+                    <div class="profile-view-header">
+                        <h3 class="profile-view-title">saved events</h3>
+                        <span class="event-count" id="savedCount">0</span>
+                    </div>
+                    <div id="savedEventsList" class="profile-events-list">
+                        <!-- Saved events will be dynamically added here -->
+                    </div>
+                    <div id="noSavedMessage" class="no-events-message">
+                        <p>no saved events yet</p>
+                        <button class="browse-events-btn" onclick="location.href='index.html'">browse events</button>
+                    </div>
+                </div>
+                
+                <!-- MY EVENTS VIEW (hidden by default) -->
+                <div id="myEventsView" class="profile-view">
+                    <div class="profile-view-header">
+                        <h3 class="profile-view-title">my events</h3>
+                        <span class="event-count" id="myEventsCount">0</span>
+                    </div>
+                    <button class="create-event-btn" id="createEventBtn">+ create new event</button>
+                    <div id="myEventsList" class="profile-events-list">
+                        <!-- My events will be dynamically added here -->
+                    </div>
+                    <div id="noMyEventsMessage" class="no-events-message">
+                        <p>you haven't created any events yet</p>
+                        <button class="create-event-btn-small" id="createFromEmptyBtn">+ create your first event</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- RIGHT COLUMN: York Images (some decor) -->
+            <div class="profile-images-col">
+                <div class="profile-image-grid">
+                    <img src="https://nowtoronto.com/wp-content/uploads/2020/05/YorkUniversity.jpg" alt="York University" class="profile-grid-img">
+                    <img src="https://www.theglobeandmail.com/resizer/v2/XRESB2EXPVFL5GFNEIWKVSBHBA.JPG?auth=f10ac79d2318f617853cdbe35b23648a5a4d5274f7d6cadff02721f6a3f0dbb7&width=1500&height=1000&quality=80&smart=true" alt="York University" class="profile-grid-img">
+                    <img src="https://dialogdesign.ca/wp-content/uploads/projects/york-university-life-sciences-building/York-U-LSB-Image1.jpg-2600x1163.jpg" alt="York University" class="profile-grid-img">
+                    <img src="https://www.intermissionmagazine.ca/wp-content/uploads/2025/04/fb-yu-3.png" alt="York University" class="profile-grid-img">
+                </div>
+                <div class="profile-quote">
+                    <p>"discover. connect. engage."</p>
+                    <span>— york university events</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <img src="./images:/footer.png" alt="York University Footer" class="footer-img">
+            <div class="footer-info">
+                <p>York University | Keele Campus | 4700 Keele Street, Toronto, ON M3J 1P3</p>
+                <p>© 2026 Campus Event Finder | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
