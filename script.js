@@ -400,10 +400,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const isSaved = localStorage.getItem('fav_Open Mic Night') === 'true';
             if (isSaved) {
                 saveEventBtn.innerHTML = '★ saved';
-                saveEventBtn.style.backgroundColor = '#F8012D';
+                saveEventBtn.style.backgroundColor = '#1A3B5D';
             } else {
                 saveEventBtn.innerHTML = '☆ save event';
-                saveEventBtn.style.backgroundColor = '#1A3B5D';
+                saveEventBtn.style.backgroundColor = '#F8012D';
             }
             
             saveEventBtn.addEventListener('click', function() {
@@ -535,8 +535,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Demo events the user has created
             const myEvents = [
-                { name: 'CS Club Hackathon', location: 'Lassonde', date: 'Apr 15 • 10am', image: './images:/hackathon.jpg' },
-                { name: 'Study Jam', location: 'Scott Library', date: 'Apr 20 • 1pm', image: './images:/studysession.jpg' }
+                { name: 'CS Club Hackathon', location: 'Lassonde', date: 'Apr 15 • 10am', image: 'images/hackathon.jpg' },
+                { name: 'Study Jam', location: 'Scott Library', date: 'Apr 20 • 1pm', image: 'images/studysession.jpg' }
             ];
             
             countSpan.textContent = myEvents.length;
