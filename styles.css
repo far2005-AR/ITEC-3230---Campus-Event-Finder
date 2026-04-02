@@ -1552,3 +1552,17 @@ button:hover, .filter-chip:hover, .toggle-btn:hover {
 .save-event-btn:hover, .apply-btn:hover {
     transform: scale(1.02);
 }
+
+/* brute force footer */
+.event-main-content {
+    padding-bottom: 150px !important;
+}
+
+.save-event-container {
+    margin-bottom: 50px !important;
+}
+
+.footer {
+    position: relative !important;
+    clear: both !important;
+}
