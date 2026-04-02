@@ -1385,7 +1385,7 @@ body {
     }
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER - CLEAN WORKING VERSION ===== */
 html, body {
     height: 100%;
     margin: 0;
@@ -1395,42 +1395,16 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Main content grows to push footer down */
-.main-content,
-.event-main-content,
-.filter-main-content,
-.profile-main-content {
-    flex: 1;
-    background-color: #FBF7F0;
-    padding: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Extra padding for specific pages to prevent footer encroachment */
 .event-main-content {
-    padding-bottom: 4rem;
+    flex: 1;
+    padding-bottom: 100px;
 }
 
-.filter-main-content {
-    padding-bottom: 4rem;
-}
-
-.profile-main-content {
-    padding-bottom: 4rem;
-}
-
-/* Footer styles */
 .footer {
     background-color: #F8012D;
-    margin-top: 80px;
     padding: 1rem 2rem;
-    margin-top: 0;
     width: 100%;
 }
 
@@ -1461,14 +1435,11 @@ body {
     margin: 0.3rem 0;
 }
 
-/* Responsive footer */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
     }
-    
     .footer-info {
         text-align: center;
     }
@@ -1552,18 +1523,4 @@ button:hover, .filter-chip:hover, .toggle-btn:hover {
 
 .save-event-btn:hover, .apply-btn:hover {
     transform: scale(1.02);
-}
-
-/* brute force footer */
-.event-main-content {
-    padding-bottom: 150px !important;
-}
-
-.save-event-container {
-    margin-bottom: 50px !important;
-}
-
-.footer {
-    position: relative !important;
-    clear: both !important;
 }
