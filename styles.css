@@ -518,7 +518,7 @@ body {
 }
 
 .save-event-btn {
-    background-color: #F8012D;
+    background-color: #F8012D !important;
     border: none;
     padding: 1rem 2rem;
     border-radius: 50px;
@@ -534,7 +534,7 @@ body {
 }
 
 .save-event-btn:hover {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.1) !important;
     transform: scale(1.02);
     box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
@@ -1428,6 +1428,7 @@ body {
 /* Footer styles */
 .footer {
     background-color: #F8012D;
+    border-top: 60px solid #FBF7F0;
     padding: 1rem 2rem;
     margin-top: 0;
     width: 100%;
