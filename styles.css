@@ -348,7 +348,6 @@ body {
     padding: 2rem;
     background-color: #FBF7F0;
     min-height: 70vh;
-    margin-bottom: 100px !important;
 }
 
 /* Two Column Layout */
@@ -1412,7 +1411,7 @@ body {
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 /* Footer stays at bottom */
@@ -1420,8 +1419,8 @@ body {
     background-color: #F8012D;
     padding: 1rem 2rem;
     width: 100%;
-    clear: both;
-    margin-top: 0;
+    flex-shrink: 0;
+    margin-top: auto;
 }
 
 .footer-container {
