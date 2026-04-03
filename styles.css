@@ -1455,6 +1455,37 @@ body {
     }
 }
 
+/* REMOVE WHITE SPACE */
+body {
+    background-color: #F8012D !important; 
+}
+
+.main-content,
+.event-main-content,
+.filter-main-content,
+.profile-main-content,
+.search-main-content {
+    background-color: #FBF7F0;
+    margin-bottom: 0 !important;
+    padding-bottom: 2rem !important;
+}
+
+.footer {
+    margin-top: 0 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Force no extra space */
+html {
+    height: auto !important;
+}
+
+body {
+    min-height: auto !important;
+}
+
+
 /* Responsive and buttons */
 @media (max-width: 768px) {
     .main-content {
