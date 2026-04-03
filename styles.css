@@ -1466,17 +1466,6 @@ body {
     }
 }
 
-/* FORCE EVENT PAGE FOOTER */
-.event-main-content {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-body > div:last-of-type {
-    display: block !important;
-    height: 150px !important;
-}
-
 /* Responsive and buttons */
 @media (max-width: 768px) {
     .main-content {
