@@ -531,6 +531,7 @@ body {
     width: 100%;
     max-width: 280px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .save-event-btn:hover {
@@ -1385,7 +1386,7 @@ body {
     }
 }
 
-/* ===== FOOTER - CLEAN WORKING VERSION ===== */
+/* ===== footer fix  ===== */
 html, body {
     height: 100%;
     margin: 0;
@@ -1395,17 +1396,37 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
-.event-main-content {
+/* main content containers */
+.main-content,
+.event-main-content,
+.filter-main-content,
+.profile-main-content,
+.search-main-content {
     flex: 1;
-    padding-bottom: 100px;
+    background-color: #FBF7F0;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Remove extra bottom padding */
+.event-main-content,
+.filter-main-content,
+.profile-main-content {
+    padding-bottom: 2rem;
+}
+
+/* Footer - consistent */
 .footer {
     background-color: #F8012D;
     padding: 1rem 2rem;
     width: 100%;
+    margin-top: 0;
 }
 
 .footer-container {
