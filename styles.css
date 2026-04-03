@@ -1386,26 +1386,22 @@ body {
     }
 }
 
-/* ===== footer fix  ===== */
+/* ===== FOOTER  ===== */
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #FBF7F0;
 }
 
-/* main content containers */
+/* Remove flex  */
 .main-content,
 .event-main-content,
 .filter-main-content,
 .profile-main-content,
 .search-main-content {
-    flex: 1;
     background-color: #FBF7F0;
     padding: 2rem;
     max-width: 1400px;
@@ -1414,19 +1410,12 @@ body {
     box-sizing: border-box;
 }
 
-/* Remove extra bottom padding */
-.event-main-content,
-.filter-main-content,
-.profile-main-content {
-    padding-bottom: 2rem;
-}
-
-/* Footer - consistent */
+/* Footer  */
 .footer {
     background-color: #F8012D;
     padding: 1rem 2rem;
     width: 100%;
-    margin-top: 0;
+    clear: both;
 }
 
 .footer-container {
